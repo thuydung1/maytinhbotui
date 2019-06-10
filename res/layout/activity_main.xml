@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="18dp"
+        android:text="Số a" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="22dp"
+        android:text="Số b" />
+
+    <EditText
+        android:id="@+id/editsoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="38dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editsob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/editsoa"
+        android:layout_alignParentRight="true"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btnnhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnchia"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="X" />
+
+    <Button
+        android:id="@+id/btntru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnnhan"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="-" 
+        android:onClick="onClick"/>
+    
+    
+
+    <Button
+        android:id="@+id/btncong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btntru"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:onClick="tong2so"
+        android:text="+" />
+
+    <TextView
+        android:id="@+id/textviewkq"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_above="@+id/btncong"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#00FF00" />
+
+    <Button
+        android:id="@+id/btnthoat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:onClick="clickthoat"
+        android:text="Thoát chương trình" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#00FF00"
+        android:gravity="center"
+        android:text="Các Kiểu Lập Trình Sự Kiện"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/btnchia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnthoat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="/" />
+
+</RelativeLayout>
